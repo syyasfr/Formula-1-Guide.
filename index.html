@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Formula 1 Ultimate Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#0b0b0b;
+    color:#f1f1f1;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#ff1e00,#5c0000);
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:40px;
+    letter-spacing:3px;
+}
+
+header p{
+    margin-top:10px;
+    opacity:0.9;
+}
+
+/* NAV */
+nav{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    padding:12px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#ff1e00;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+/* SECTION */
+.section{
+    background:#151515;
+    margin-bottom:30px;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 12px 35px rgba(0,0,0,.6);
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+.section h2{
+    color:#ff1e00;
+    margin-top:0;
+    border-bottom:2px solid #ff1e00;
+    padding-bottom:8px;
+}
+
+/* DRIVER CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1f1f1f;
+    border-radius:16px;
+    overflow:hidden;
+    text-align:center;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.04);
+    box-shadow:0 0 25px rgba(255,30,0,.7);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:12px 0 4px;
+}
+
+.card p{
+    margin-bottom:12px;
+    font-size:13px;
+    color:#ccc;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    font-size:14px;
+}
+
+table th, table td{
+    border:1px solid #333;
+    padding:10px;
+}
+
+table th{
+    background:#ff1e00;
+}
+
+table tr:nth-child(even){
+    background:#1c1c1c;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:16px;
+    background:#111;
+    font-size:13px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>FORMULA 1</h1>
+<p>Kecepatan • Teknologi • Strategi • 2025–2026</p>
+</header>
+
+<nav>
+<a href="#drivers">Drivers</a>
+<a href="#teams">Tim & Mobil</a>
+<a href="#sejarah">Sejarah</a>
+<a href="#gp">Grand Prix</a>
+<a href="#sirkuit">Sirkuit</a>
+<a href="#fakta">Fakta</a>
+</nav>
+
+<div class="container">
+
+<!-- DRIVERS -->
+<div class="section" id="drivers">
+<h2>🏎️ Pembalap Formula 1</h2>
+<div class="grid">
+
+<div class="card">
+<img src="max.jpg">
+<h3>Max Verstappen</h3>
+<p>Red Bull Racing</p>
+</div>
+
+<div class="card">
+<img src="leclerc.jpg">
+<h3>Charles Leclerc</h3>
+<p>Ferrari</p>
+</div>
+
+<div class="card">
+<img src="george.jpg">
+<h3>George Russell</h3>
+<p>Mercedes AMG</p>
+</div>
+
+<div class="card">
+<img src="oscar.jpg">
+<h3>Oscar Piastri</h3>
+<p>McLaren</p>
+</div>
+
+</div>
+</div>
+
+<!-- TEAMS -->
+<div class="section" id="teams">
+<h2>🚘 Tim & Mobil F1</h2>
+<table>
+<tr><th>Tim</th><th>Mobil</th><th>Mesin</th></tr>
+<tr><td>Red Bull Racing</td><td>RB20</td><td>Honda RBPT</td></tr>
+<tr><td>Ferrari</td><td>SF-24</td><td>Ferrari</td></tr>
+<tr><td>Mercedes AMG</td><td>W15</td><td>Mercedes</td></tr>
+<tr><td>McLaren</td><td>MCL38</td><td>Mercedes</td></tr>
+</table>
+</div>
+
+<!-- SEJARAH -->
+<div class="section" id="sejarah">
+<h2>📜 Sejarah Formula 1</h2>
+<table>
+<tr><th>Tahun</th><th>Peristiwa</th></tr>
+<tr><td>1950</td><td>Kejuaraan Dunia F1 pertama digelar</td></tr>
+<tr><td>2000–2004</td><td>Dominasi Ferrari & Schumacher</td></tr>
+<tr><td>2014–2020</td><td>Era hybrid Mercedes</td></tr>
+<tr><td>2025</td><td>Persaingan ketat generasi muda</td></tr>
+<tr><td>2026</td><td>Regulasi mesin ramah lingkungan</td></tr>
+</table>
+</div>
+
+<!-- GP -->
+<div class="section" id="gp">
+<h2>🏁 Grand Prix</h2>
+<table>
+<tr><th>Sesi</th><th>Keterangan</th></tr>
+<tr><td>Free Practice</td><td>Latihan & setup mobil</td></tr>
+<tr><td>Kualifikasi</td><td>Menentukan grid start</td></tr>
+<tr><td>Race</td><td>Balapan utama perebutan poin</td></tr>
+</table>
+</div>
+
+<!-- CIRCUIT -->
+<div class="section" id="sirkuit">
+<h2>🏟️ Sirkuit Ikonik</h2>
+<table>
+<tr><th>Nama</th><th>Negara</th><th>Ciri</th></tr>
+<tr><td>Monaco</td><td>Monako</td><td>Jalan sempit & glamor</td></tr>
+<tr><td>Monza</td><td>Italia</td><td>Sirkuit tercepat</td></tr>
+<tr><td>Spa</td><td>Belgia</td><td>Eau Rouge legendaris</td></tr>
+<tr><td>Suzuka</td><td>Jepang</td><td>Figure-eight layout</td></tr>
+</table>
+</div>
+
+<!-- FACTS -->
+<div class="section" id="fakta">
+<h2>📊 Fakta Menarik F1</h2>
+<table>
+<tr><th>Fakta</th><th>Penjelasan</th></tr>
+<tr><td>Kecepatan</td><td>> 350 km/jam</td></tr>
+<tr><td>0–100 km/jam</td><td>< 2 detik</td></tr>
+<tr><td>Pit Stop</td><td>± 1.8 detik</td></tr>
+<tr><td>Teknologi</td><td>Hybrid, AI, aerodinamika canggih</td></tr>
+</table>
+</div>
+
+</div>
+
+<footer>
+© 2026 Formula 1 Created • By Syafira C
+</footer>
+
+</body>
+</html>
